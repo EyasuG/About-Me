@@ -38,3 +38,24 @@ mypassion.toLocaleUpperCase() === 'YES') {
 
 
    //console.log('My favorite hero is ' + favoriteHero + 'and hate Marvel and I am a fantastic person') //Instead of interacting with the developer tool, we can interact with the user using alert 
+   
+
+
+let fastfoodarray = ['Burger King', 'McDonalds', 'Subway', 'Chepotle', 'kfc', 'Popeyes']
+
+//create a loop that will run as many times as there are values in fast food store array
+for(let i = 0; i < fastfoodarray.length; i++) {
+  let fastfood = prompt('Which one is the healthiest fastfood store?')
+  //Check if the prompt returns the number of the choice, if it does, alert the user they are correct and break the for loop
+ if(fastfood == 2) {
+    alert('Great Job! ' + fastfoodarray[2] + ' is the healthiest fastfood store')
+    break
+    //else alert the user they are wrong and how many chances they have left determined by subtracting the current value of i from the length of the hero array
+  } else {
+    alert('Sorry Try again, you have ' + (fastfoodarray.length - (i)) + ' more tries')
+  }
+  console.log('index is now ', i)
+  console.log(fastfoodarray[i])
+}
+
+
